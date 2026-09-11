@@ -1,0 +1,236 @@
+:root{
+    --primary-color:#0056b3;
+    --secondary-color: #e2f0ff;
+    --text-color:#333333;
+    --background-color:#ffffff;
+    --border-radius:8px;
+    --spacing: 20px;
+}
+/*
+    Pseudo-clases
+    :hover - cuando pasamos el mouse sobre el elemento
+    :active - mientras mantenemos el click presionado
+    :focus - click o tab
+    :visited - un link ha sido visitado
+    :cheked - cuando esta activado o seleccionado
+    :disabled - cuando el elemento no esta disponible
+
+    :first-child -
+    :last-child -
+    :nth:child(n)
+
+    Pseudo-elementos
+    ::before - inyecta contenido antes del elemento
+    ::after - inyecto contenido despues del elemento
+    ::first-letter
+    ::first-line
+
+*/
+
+/*h1 {*/
+/*    font-size: 35px;*/
+/*}*/
+
+/*#titulo-principal {*/
+/*    font-size: 100px;*/
+/*}*/
+
+/*.title {*/
+/*    font-size: 25px;*/
+/*}*/
+
+body{
+    font-family: Arial,Tahoma,Verdana;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+h1,h2,h3{
+    color: #3032ac;
+}
+/*
+Nuevo
+
+*/
+*{
+    box-sizing: border-box;
+}
+
+header{
+    background-color: var(--primary-color);
+    color:white;
+    padding: var(--spacing);
+    text-align: center;
+}
+
+header h1{
+    color:var(--primary-color);
+    margin-bottom: 5px;
+    background-color: var(--background-color);
+    border-radius: 4px;
+}
+
+#inicio_navegacion{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;|
+}
+
+#inicio_navegacion a{
+    color :white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+
+#hobbies_navegacion{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;|
+}
+
+#hobbies_navegacion a{
+    background-color :var(--background-color);
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+#hobbies_navegacion a:hover{
+    background-color:var(--primary-color);
+}
+
+.foto-perfil{
+    float: right;
+    margin-right:15px ;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    margin-left:10px ;
+    border: 3px solid var(--primary-color);
+}
+/*
+termina lo nuevo
+
+*/
+
+
+/*#formacion{*/
+/*    background-color: #fff;*/
+
+/*    border: 1px solid #ddd;*/
+
+/*    padding:20px;*/
+/*    !*margin-top: 20px;*!*/
+/*    !*margin-right: 5px;*!*/
+/*    !*margin-bottom:10px;*!*/
+/*    !*margin-left: 5px;*!*/
+/*    !*margin: 20px 10px 20px 5px;*!*/
+/*    margin: 20px;*/
+/*    border-radius: 8px;*/
+
+/*}*/
+#sobre-mi,#habilidades,#proyectos,#contacto,#formacion,#hobbies{
+    background-color: var(--background-color);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+    width: 400px;
+}
+
+#proyectos a{
+    text-decoration: underline blue;
+    color: black;
+    margin-left: 60px;
+}
+#proyectos a:hover{
+    color:blue;
+}
+
+/*#habilidades{*/
+/*    width: 500px;*/
+/*    background-color: #fff;*/
+/*    padding: 20px;*/
+/*    margin: 20px;*/
+/*    border-radius: 8px;*/
+/*    box-shadow: 0 2px 4px rgba(0,0,0,0.1);*/
+/*}*/
+.destacado{
+    background-color: #e2f0ff;
+    padding: 15px;
+    border-left: 4px solid #0056b3;
+    font-weight:500 ;
+}
+
+.tabla-bonita{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+.tabla-bonita th,.tabla-bonita td{
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+#mi-imagen{
+    width: 250px;
+    border: 3px solid #ccc;
+    padding: 10px;
+}
+.tabla-bonita th{
+    background-color: #0056b3;
+    color: #fff;
+}
+#miInformacion{
+    display: flex;
+    justify-content: center;
+}
+
+#miInformacion h2{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#barraDireccion{
+    text-align: center;
+    border-radius: 8px;
+}
+#barraDireccion a{
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: black;
+    background-color: var(--background-color);
+}
+#barraDireccion a:hover{
+    background-color:var(--primary-color);
+}
+.titulo{
+    margin-left: 10px;
+}
+#contacto a{
+    text-decoration: underline blue;
+    color: black;
+}
+
+#misHobbies{
+    display: flex;
+    justify-content: center;
+}
+
+#series, #entrenar, #videojuegos{
+    background-color: var(--background-color);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+    width: 400px;
+}
+
